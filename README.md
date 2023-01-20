@@ -60,7 +60,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/X5LhMEs.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-4.) After rebooting DC-1, open Active Directory Users and Computers from Tools at the top right of your Server Manager screen. Right click 'mydomain.com' and create two New Organizational Units. Title the first _EMPLOYEES and the second _ADMINS. Create a new User named Jane Doe with the username 'jane_admin' and assign them the same password as you used earlier when creating your domain. Be sure to uncheck any of the boxes on the Password window. Drag Jane Doe to the _ADMINS folder. Right-click Jane Doe and select Properties -> Member Of -> Add -> Type 'domain' -> Check Names -> Select 'Domain Admins' -> Ok -> Apply -> Ok. Log out of DC-1 and log back in as 'mydomain.com\jane_admin' (use this as your admin account from now on).
+4.) After rebooting DC-1, open Active Directory Users and Computers (ADUC) from Tools at the top right of your Server Manager screen. Right click 'mydomain.com' and create two New Organizational Units. Title the first _EMPLOYEES and the second _ADMINS. Create a new User named Jane Doe with the username 'jane_admin' and assign them the same password as you used earlier when creating your domain. Be sure to uncheck any of the boxes on the Password window. Drag Jane Doe to the _ADMINS folder. Right-click Jane Doe and select Properties -> Member Of -> Add -> Type 'domain' -> Check Names -> Select 'Domain Admins' -> Ok -> Apply -> Ok. Log out of DC-1 and log back in as 'mydomain.com\jane_admin' (use this as your admin account from now on).
 </p>
 <br />
 
@@ -81,9 +81,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/xyo7SDK.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-Login to DC-1 as jane_admin, and open Powershell_ISE as an administrator (right-click and select 'Run as administrator'). Create a new file and paste the contents of the [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+7.) Login to DC-1 as jane_admin, and open Powershell_ISE as an administrator (right-click and select 'Run as administrator'). Create a new file and paste the contents of the [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) Feel free to observe the script. You may notice the amount of users being created and the password used for each one (Password1). Once the script is finished, you can open ADUC and observe the accounts in the 'User' Organizational Unit. From here, you can select one of the new users and attempt to login to Client-1.
 </p>
 <br />
