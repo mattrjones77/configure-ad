@@ -88,4 +88,4 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 
-[script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+Use this link to access the Powershell script: [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
