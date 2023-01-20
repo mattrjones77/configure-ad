@@ -93,4 +93,4 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 
-[Script]https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1
+[Script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
